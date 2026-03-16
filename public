@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AgentHubs</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h2>AgentHubs</h2>
+
+<h3>AI Agents</h3>
+
+<button onclick="setAgent('startup')">Startup Agent</button>
+<button onclick="setAgent('study')">Study Agent</button>
+<button onclick="setAgent('content')">Content Agent</button>
+<button onclick="setAgent('coding')">Coding Agent</button>
+<button onclick="setAgent('marketing')">Marketing Agent</button>
+
+<h3>AI Tools</h3>
+
+<button onclick="setAgent('image')">Image Generator</button>
+<button onclick="setAgent('search')">AI Search</button>
+<button onclick="setAgent('business')">Business Planner</button>
+<button onclick="setAgent('code')">Code Generator</button>
+
+<h3>Marketplace</h3>
+
+<div class="card">SEO Agent</div>
+<div class="card">YouTube Script Agent</div>
+<div class="card">Trading Strategy Agent</div>
+
+</div>
+
+<div class="chat">
+
+<div id="messages"></div>
+
+<div class="input">
+
+<input id="input" placeholder="Ask anything..." />
+
+<button onclick="send()">Send</button>
+
+<button onclick="startVoice()">🎤</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+<script src="voice.js"></script>
+
+</body>
+</html>
